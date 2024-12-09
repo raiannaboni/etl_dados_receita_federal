@@ -14,8 +14,7 @@ from dateutil.relativedelta import relativedelta
 
 def conectar_bd():
     # Conexão com o banco de dados
-    engine = sqlalchemy.create_engine(
-                f'postgresql+psycopg2://postgres:n0v4s3mpr3s4s@195.35.18.55:5432/receita_federal')
+    engine = sqlalchemy.create_engine()
     conn = engine.connect()
     return conn
 
